@@ -1,1 +1,19 @@
 Main() comes here
+
+public static void Main(string[] args)
+    {
+        List<long>longlist = new List<long>();
+
+        foreach(int num in arr)
+    {
+        longlist.Add(num);
+
+     }
+     long sum = longlist.Sum();
+     long minNum = longlist.Min();
+     long maxNum = longlist.Max();
+
+     System.Console.WriteLine($"{sum-maxNum} {sum-minNum}");
+
+
+    }
