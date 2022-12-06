@@ -1,0 +1,18 @@
+public static List<int> gradingStudents(List<int> grades)
+    {
+        //using for loop
+        //using count as the limit so that list doesn't overlow
+        for (int i = 0; i < grades.Count(); i++)
+        {
+            //since grades less than 38 are not rounded.
+            if (grades[i] >= 38)
+            {   
+                //for grades multiple of 5
+                var round = grades[i] % 5;
+                if(round >= 3)
+                //adding up to make the grade multiple of 5
+                    grades[i] += (5 - round);
+            }
+        }
+        return grades;
+
